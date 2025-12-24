@@ -14,7 +14,7 @@
 # limitations under the License.
 
 
-DEVICE_PATH := device/realme/RMX3261
+DEVICE_PATH := device/realme/RMX3263
 
 # Architecture
 TARGET_ARCH := arm64
@@ -56,8 +56,8 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_KERNEL_CONFIG := RMX3261_defconfig
-TARGET_KERNEL_SOURCE := kernel/realme/RMX3261
+TARGET_KERNEL_CONFIG := RMX3263_defconfig
+TARGET_KERNEL_SOURCE := kernel/realme/RMX3263
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -111,8 +111,8 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     
 
 ## Inherit partitions flags
-include device/realme/RMX3261/partitions.mk
+include device/realme/RMX3263/partitions.mk
 
 #flags
-include device/realme/RMX3261/TW_flags.mk
+include device/realme/RMX3263/TW_flags.mk
 
